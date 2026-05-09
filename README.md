@@ -4,6 +4,7 @@
 
 ## 🔗 Quick Links
 [![Java](https://img.shields.io/badge/Java-Official%20Site-ED8B00?logo=java&logoColor=white)](https://www.java.com/)
+[![Course](https://img.shields.io/badge/Course-CSE135%20OOP-yellow?logo=education)](https://ece.northsouth.edu/courses/cse-135/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-Official%20Site-0078D4?logo=oracle&logoColor=white)](https://gluonhq.com/products/javafx/)
 [![Maven](https://img.shields.io/badge/Maven-Official%20Site-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![NSU](https://img.shields.io/badge/NSU-North%20South%20University-1E90FF?logo=graduation-cap&logoColor=white)](https://www.northsouth.edu/)
