@@ -11,8 +11,6 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-333333?logo=github)](https://github.com/sifat-jaman-13/Moive-Project-Java)
 
 [![Java Version](https://img.shields.io/badge/java-17%2B-orange)](https://www.oracle.com/java/technologies/downloads/)
-[![Framework](https://img.shields.io/badge/framework-JavaFX%2021-blue)](https://gluonhq.com/products/javafx/)
-[![Build Tool](https://img.shields.io/badge/build-Maven-red)](https://maven.apache.org/)
 [![Platform](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-green)](#-quick-start)
 [![License](https://img.shields.io/badge/license-proprietary-blue)](#-license)
 
