@@ -1,0 +1,439 @@
+================================================================================
+       SCARZERO MOVIE STORE (JAVA) - INSTALLATION & SETUP GUIDE
+================================================================================
+
+Project: ScarZero Movie Store - Java Edition
+Author: Sifat Jaman
+Institution: North South University
+Course: CSE101 - Object-Oriented Programming
+Version: 1.0.0 - Production Ready
+Created: May 8, 2026
+
+GitHub: https://github.com/sifat-jaman-13/Movie-Store-With-Java
+
+================================================================================
+                            TABLE OF CONTENTS
+================================================================================
+
+1. Quick Start
+2. System Requirements
+3. Windows Installation
+4. Linux Installation
+5. macOS Installation
+6. Building the Project
+7. Running the Application
+8. Troubleshooting
+9. Quick Reference
+10. Support & Contact
+
+================================================================================
+                           1. QUICK START
+================================================================================
+
+For users who already have Java 17+ and Maven 3.6+:
+
+WINDOWS:
+  cd path\to\Movie Store With Java
+  mvn clean javafx:run
+
+LINUX/macOS:
+  cd path/to/Movie\ Store\ With\ Java
+  mvn clean javafx:run
+
+That's it! The application will launch.
+
+================================================================================
+                       2. SYSTEM REQUIREMENTS
+================================================================================
+
+MANDATORY:
+  • Operating System: Windows 10+, Ubuntu 20.04+, Fedora 33+, macOS 10.13+
+  • Java: JDK 17 or higher
+  • Maven: 3.6 or higher
+  • RAM: 1 GB minimum (2 GB recommended)
+  • Disk Space: 200 MB (for Maven cache and build artifacts)
+
+VERIFY YOUR SYSTEM:
+  java -version        # Should show Java 17 or higher
+  mvn -version         # Should show Maven 3.6 or higher
+
+If either command is not found, proceed to the installation section for your OS.
+
+================================================================================
+                      3. WINDOWS INSTALLATION
+================================================================================
+
+STEP 1: Install Java 17+
+─────────────────────────
+
+Option A: Using JDK from Adoptium (RECOMMENDED)
+  1. Go to https://adoptium.net/
+  2. Download "OpenJDK 17 (LTS)" for Windows (64-bit)
+  3. Run the installer
+  4. Click "Install" and follow prompts
+  5. Select "Add to PATH" (should be checked by default)
+  6. Complete installation
+
+Option B: Using Oracle JDK
+  1. Go to https://jdk.java.net/21/
+  2. Download Windows installer
+  3. Run installer and follow wizard
+  4. Add Java to PATH manually (if needed)
+
+Verify Installation:
+  • Open Command Prompt (Win+R, type "cmd", press Enter)
+  • Type: java -version
+  • Should show: Java 17.x.x or higher
+
+STEP 2: Install Maven 3.6+
+──────────────────────────
+
+Option A: Using Installer
+  1. Go to https://maven.apache.org/download.cgi
+  2. Download "Binary zip archive"
+  3. Extract to folder (e.g., C:\tools\maven)
+  4. Add to PATH:
+     • Right-click "This PC" → Properties
+     • Advanced system settings → Environment Variables
+     • New System Variable: Name "MAVEN_HOME", Value "C:\tools\maven"
+     • Add to PATH: C:\tools\maven\bin
+  5. Restart Command Prompt
+
+Option B: Using Chocolatey (if installed)
+  • Open Command Prompt as Administrator
+  • Type: choco install maven
+  • Wait for installation to complete
+
+Option C: Using Scoop
+  • Open Command Prompt
+  • Type: scoop install maven
+
+Verify Installation:
+  • Open new Command Prompt
+  • Type: mvn -version
+  • Should show Maven 3.6.x or higher
+
+STEP 3: Clone/Download Project
+───────────────────────────────
+  1. Create folder: C:\Projects
+  2. Download project from GitHub:
+     git clone https://github.com/sifat-jaman-13/Movie-Store-With-Java.git
+  3. Navigate to folder:
+     cd C:\Projects\Movie-Store-With-Java
+
+STEP 4: Run Application
+───────────────────────
+  mvn clean javafx:run
+
+First run may take 2-3 minutes (downloading dependencies).
+
+================================================================================
+                      4. LINUX INSTALLATION
+================================================================================
+
+UBUNTU / DEBIAN
+───────────────
+
+STEP 1: Update System
+  sudo apt-get update
+  sudo apt-get upgrade -y
+
+STEP 2: Install Java 17+
+  sudo apt-get install openjdk-17-jdk -y
+
+STEP 3: Install Maven
+  sudo apt-get install maven -y
+
+STEP 4: Verify Installation
+  java -version
+  mvn -version
+
+STEP 5: Clone Project
+  git clone https://github.com/sifat-jaman-13/Movie-Store-With-Java.git
+  cd Movie-Store-With-Java
+
+STEP 6: Run Application
+  mvn clean javafx:run
+
+FEDORA / RHEL / CentOS
+──────────────────────
+
+STEP 1: Update System
+  sudo dnf update -y
+
+STEP 2: Install Java 17+
+  sudo dnf install java-17-openjdk-devel -y
+
+STEP 3: Install Maven
+  sudo dnf install maven -y
+
+STEP 4-6: Same as Ubuntu above
+
+ARCH LINUX
+──────────
+
+  sudo pacman -S jdk-openjdk maven
+  git clone https://github.com/sifat-jaman-13/Movie-Store-With-Java.git
+  cd Movie-Store-With-Java
+  mvn clean javafx:run
+
+USING SETUP SCRIPT (AUTOMATED)
+──────────────────────────────
+  cd Movie-Store-With-Java
+  chmod +x setup_linux.sh
+  ./setup_linux.sh
+
+Script will verify Java/Maven and run the build.
+
+================================================================================
+                      5. macOS INSTALLATION
+================================================================================
+
+STEP 1: Install Homebrew (if not installed)
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+STEP 2: Install Java 17+
+  brew install openjdk@17
+  sudo ln -sfn /usr/local/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
+
+STEP 3: Install Maven
+  brew install maven
+
+STEP 4: Verify Installation
+  java -version
+  mvn -version
+
+STEP 5: Clone Project
+  git clone https://github.com/sifat-jaman-13/Movie-Store-With-Java.git
+  cd Movie-Store-With-Java
+
+STEP 6: Run Application
+  mvn clean javafx:run
+
+ALTERNATIVE: Using IntelliJ IDEA
+  1. Download IntelliJ IDEA Community Edition
+  2. Open project folder
+  3. Right-click MovieStoreApp.java → Run
+  (IntelliJ handles Maven automatically)
+
+================================================================================
+                    6. BUILDING THE PROJECT
+================================================================================
+
+CLEAN BUILD:
+  mvn clean compile
+
+BUILD WITH TESTS:
+  mvn clean test
+
+BUILD JAR PACKAGE:
+  mvn clean package
+
+BUILD WITHOUT TESTS (FASTER):
+  mvn clean package -DskipTests
+
+BUILD WITH VERBOSE OUTPUT:
+  mvn clean javafx:run -X
+
+OFFLINE BUILD (no internet required):
+  mvn offline clean javafx:run -o
+
+================================================================================
+                   7. RUNNING THE APPLICATION
+================================================================================
+
+METHOD 1: Using Maven JavaFX Plugin (RECOMMENDED)
+  mvn clean javafx:run
+
+METHOD 2: Build JAR and Run
+  mvn clean package
+  java -jar target/MovieStore.jar
+
+METHOD 3: Using IDE
+  IntelliJ IDEA:
+    • Open project
+    • Mark src/main/java as Sources Root
+    • Right-click MovieStoreApp.java → Run
+  
+  Eclipse:
+    • Import → Existing Maven Projects
+    • Select project
+    • Right-click → Run As → Java Application
+
+METHOD 4: Run with Custom Settings
+  java -Xmx1024m -jar target/MovieStore.jar     # 1GB heap
+  java -Xmx2048m -jar target/MovieStore.jar     # 2GB heap
+
+LOGIN CREDENTIALS:
+  Admin Console:
+    Username: Sifat
+    Password: sifat
+
+  Create new user account in-app via Register button
+  
+  Movie Catalog Includes:
+    • 2026 Latest Hits (6 movies)
+    • 2025 Releases (4 movies)
+    • 2024 Blockbusters (3 movies)
+    • 2023 & Earlier Classics (27+ movies)
+    • Total: 40+ movies across all genres
+
+================================================================================
+                      8. TROUBLESHOOTING
+================================================================================
+
+ERROR: "java: command not found"
+FIX:
+  • Install Java 17+ properly
+  • Add Java to PATH environment variable
+  • Restart terminal/command prompt
+  • Verify: java -version
+
+ERROR: "mvn: command not found"
+FIX:
+  • Install Maven properly
+  • Add Maven to PATH
+  • Restart terminal/command prompt
+  • Verify: mvn -version
+
+ERROR: "BUILD FAILURE - Invalid source release"
+FIX:
+  • Ensure Java 17+ installed
+  • Check: java --version
+  • Update Maven: mvn --version
+  • Try: mvn clean install -U
+
+ERROR: "GUI fails to start / No display found"
+FIX (Linux):
+  • Install required dependencies:
+    sudo apt-get install libgl1-mesa-glx libxrender1
+  • If using X11 forwarding, try:
+    mvn javafx:run -X
+
+ERROR: "OutOfMemoryError"
+FIX:
+  • Increase heap size:
+    java -Xmx2048m -jar target/MovieStore.jar
+  • Or run build with more memory:
+    mvn -Xmx1024m clean package
+
+ERROR: "Port already in use"
+FIX:
+  • Find process using port:
+    Windows: netstat -ano | findstr :8080
+    Linux: lsof -i :8080
+  • Kill process or use different port
+
+ERROR: "JavaFX not found"
+FIX:
+  • Maven will download automatically
+  • If not, force update:
+    mvn dependency:resolve-plugins -U
+
+JAVA VERSION MISMATCH
+FIX:
+  • Check installed Java: java -version
+  • Should show Java 17+
+  • If showing Java 11 or 8, install Java 17+
+  • May need to uninstall older Java versions
+
+================================================================================
+                     9. QUICK REFERENCE
+================================================================================
+
+ESSENTIAL COMMANDS:
+
+Check Versions:
+  java -version          # Java version
+  mvn -version           # Maven version
+  mvn --version          # Alternative syntax
+
+Development:
+  mvn clean              # Clean build
+  mvn compile            # Compile code
+  mvn test              # Run tests
+  mvn package           # Create JAR
+  mvn javafx:run        # Run application
+
+Cleanup:
+  mvn clean             # Remove target folder
+  mvn dependency:purge-local-repository  # Clear cache
+
+Debugging:
+  mvn -X javafx:run     # Verbose output
+  mvn dependency:tree   # Show dependencies
+
+ENVIRONMENT VARIABLES:
+
+Set JAVA_HOME (Windows):
+  setx JAVA_HOME "C:\Program Files\Java\jdk-17"
+
+Set JAVA_HOME (Linux/macOS):
+  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+
+Set MAVEN_HOME (Windows):
+  setx MAVEN_HOME "C:\tools\maven"
+
+Set MAVEN_HOME (Linux/macOS):
+  export MAVEN_HOME=/usr/local/maven
+
+================================================================================
+                   10. SUPPORT & CONTACT
+================================================================================
+
+DOCUMENTATION:
+  • README.md              - Complete guide
+  • WINDOWS_SETUP.md       - Windows-specific help
+  • setup_linux.sh         - Linux/macOS setup
+  • LICENSE                - License terms
+  • pom.xml                - Maven configuration
+
+RESOURCES:
+  • Java Documentation: https://docs.oracle.com/en/java/
+  • Maven Guide: https://maven.apache.org/guides/
+  • JavaFX Documentation: https://openjfx.io/javadoc/21/
+  • GitHub Repository: https://github.com/sifat-jaman-13/Movie-Store-With-Java
+
+PROJECT INFORMATION:
+  Author: Sifat Jaman
+  Institution: North South University
+  Course: CSE101 - Object-Oriented Programming
+  Type: Solo Project - Independent Creation
+  Version: 1.0.0 - Production Ready
+  Created: May 8, 2026
+
+CONTACT:
+  Email: sifat.jaman@nsu.edu.bd (or via GitHub)
+  GitHub: https://github.com/sifat-jaman-13
+
+REPORTING ISSUES:
+  1. Check this guide and troubleshooting section
+  2. Search GitHub issues for similar problems
+  3. Create new issue with:
+     • Your OS and Java version
+     • Error message
+     • Steps to reproduce
+     • Expected vs actual behavior
+
+================================================================================
+                    GETTING STARTED QUICK STEPS
+================================================================================
+
+1. Install Java 17+       → https://adoptium.net/
+2. Install Maven 3.6+     → https://maven.apache.org/
+3. Verify: java -version && mvn -version
+4. Clone: git clone https://github.com/sifat-jaman-13/Movie-Store-With-Java.git
+5. Navigate: cd Movie-Store-With-Java
+6. Run: mvn clean javafx:run
+7. Login with admin/admin123 or create new account
+
+That's all! Enjoy ScarZero Movie Store!
+
+================================================================================
+Version: 1.0.0
+Created: May 8, 2026
+Last Updated: May 8, 2026
+
+For the most up-to-date information, visit:
+https://github.com/sifat-jaman-13/Movie-Store-With-Java
+================================================================================
