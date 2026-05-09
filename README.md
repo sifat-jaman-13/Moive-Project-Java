@@ -4,14 +4,16 @@
 
 ## 🔗 Quick Links
 [![Java](https://img.shields.io/badge/Java-Official%20Site-ED8B00?logo=java&logoColor=white)](https://www.java.com/)
+[![JavaFX](https://img.shields.io/badge/JavaFX-Official%20Site-0078D4?logo=oracle&logoColor=white)](https://gluonhq.com/products/javafx/)
+[![Maven](https://img.shields.io/badge/Maven-Official%20Site-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![NSU](https://img.shields.io/badge/NSU-North%20South%20University-1E90FF?logo=graduation-cap&logoColor=white)](https://www.northsouth.edu/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-333333?logo=github)](https://github.com/sifat-jaman-13/Moive-Project-Java)
 
-![Java Version](https://img.shields.io/badge/java-17%2B-orange)
-![Framework](https://img.shields.io/badge/framework-JavaFX%2021-blue)
-![Build Tool](https://img.shields.io/badge/build-Maven-red)
-![Platform](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-green)
-![License](https://img.shields.io/badge/license-proprietary-blue)
+[![Java Version](https://img.shields.io/badge/java-17%2B-orange)](https://www.oracle.com/java/technologies/downloads/)
+[![Framework](https://img.shields.io/badge/framework-JavaFX%2021-blue)](https://gluonhq.com/products/javafx/)
+[![Build Tool](https://img.shields.io/badge/build-Maven-red)](https://maven.apache.org/)
+[![Platform](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-green)](#-quick-start)
+[![License](https://img.shields.io/badge/license-proprietary-blue)](#-license)
 
 ---
 
