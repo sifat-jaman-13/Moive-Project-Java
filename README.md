@@ -2,6 +2,11 @@
 
 > A comprehensive movie store management system with separate user and admin interfaces built with Java and JavaFX.
 
+## 🔗 Quick Links
+[![Java](https://img.shields.io/badge/Java-Official%20Site-ED8B00?logo=java&logoColor=white)](https://www.java.com/)
+[![NSU](https://img.shields.io/badge/NSU-North%20South%20University-1E90FF?logo=graduation-cap&logoColor=white)](https://www.northsouth.edu/)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-333333?logo=github)](https://github.com/sifat-jaman-13/Moive-Project-Java)
+
 ![Java Version](https://img.shields.io/badge/java-17%2B-orange)
 ![Framework](https://img.shields.io/badge/framework-JavaFX%2021-blue)
 ![Build Tool](https://img.shields.io/badge/build-Maven-red)
